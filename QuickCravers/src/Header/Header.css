@@ -1,0 +1,17 @@
+.menubar {
+    background: rgb(198, 57, 57);
+}
+
+.logo-title{
+    font-size: 20px;
+    color: white;
+}
+
+.text-white{
+    font-size: 20px;
+    transition: text-decoration 0.3s ease;
+}
+
+.text-white:hover{
+    text-decoration: underline;
+}
