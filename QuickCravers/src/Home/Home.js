@@ -5,10 +5,10 @@ import "./Home.css";
 const Home = () => {
   return (
     <div>
-      <Container fluid className="home">
+      <div className="home">
         <Row>
           <div className="col-12">
-            <div className="banner-container">
+            <div className="banner">
               <h1 className="text-center fw-bolder text-danger welcome-text">
                 Welcome to QuickCravers
               </h1>
@@ -27,7 +27,7 @@ const Home = () => {
             </div>
           </div>
         </Row>
-      </Container>
+      </div>
     </div>
   );
 };

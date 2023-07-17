@@ -6,10 +6,10 @@ import "./About.css";
 const About = () => {
   return (
     <div>
-      <div className="about-container">
-        <h2 className="text-center fw-bolder text-danger welcome-text">
+      <div className="about">
+        <h1 className="text-center fw-bolder text-danger welcome-text">
           About QuickCravers!
-        </h2>
+        </h1>
         <h5 className="text-center">
         Welcome to QuickCravers, your ultimate food delivery app that brings delicious meals right to your doorstep! 
         QuickCravers is a user-friendly mobile application that allows you to order your favorite meals from a wide range of 
