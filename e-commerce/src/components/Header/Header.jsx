@@ -1,4 +1,5 @@
 import React , {useState} from 'react'
+import { Link } from 'react-router-dom';
 import "./header.css"
 import Lo from "../../images/footgen-logo.png"
 
@@ -14,23 +15,23 @@ const Header = () => {
         <ul className={isMobile? "nav-links" : "navbar-list"}>
 
           <li className="navbar-item">
-            <a href="/#" className="navbar-link">HOME</a>
+            <Link to="/header" className="navbar-link">HOME</Link>
           </li>
 
           <li className="navbar-item">
-            <a href="/#" className="navbar-link">PRODUCTS</a>
+            <Link to="/main" className="navbar-link">PRODUCTS</Link>
           </li>
 
           <li className="navbar-item">
-            <a href="/#" className="navbar-link">SHOP</a>
+            <Link to="/bestseller" className="navbar-link">SHOP</Link>
           </li>
 
           <li className="navbar-item">
-            <a href="/#" className="navbar-link">SALE</a>
+            <Link to="/footer" className="navbar-link">SALE</Link>
           </li>
 
           <li className="navbar-item">
-            <a href="/#" className="navbar-link">CONTACT</a>
+            <Link to="/footer" className="navbar-link">CONTACT</Link>
           </li>
 
         </ul>
