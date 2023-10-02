@@ -42,7 +42,7 @@
 .navbar-link {
     font-family: 'roboto', sans-serif;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 20px;
     text-decoration: none;
     color: black;
 }
@@ -53,7 +53,6 @@
 
 .navbar-item:hover {
     transform: scale(1.1);
-
 }
 
 .navbar-link:hover {
@@ -65,7 +64,8 @@
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    margin-top: 40px;
+    margin-top: 38px;
+    margin-bottom: 38px;
 }
 
 .h-right {
@@ -74,13 +74,13 @@
     justify-content: flex-end;
 }
 
-.h-right>ion-icon:nth-child(4) {
+.h-right>ion-icon:last-child{
     margin-right: 100px;
 }
 
 .h-right>ion-icon {
-    height: 24px;
-    width: 24px;
+    height: 27px;
+    width: 27px;
     margin-right: 25px;
     margin-top: 40px;
 }
@@ -88,6 +88,26 @@
 .h-right>ion-icon:hover {
     color: red;
     cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 29%;
+    right: 17%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(202, 83, 83, 0.1);
+    padding: 5px;
+    height: 42px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    flex: 1;
 }
 
 .dropdown-content {
@@ -104,7 +124,6 @@
     flex-direction: column;
     justify-content: center;
 }
-
 
 @media screen and (max-width:980px) {
     .h {
@@ -148,7 +167,7 @@
         margin: 0px 0px;
     }
 
-    .nav-links{
+    .nav-links {
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -157,17 +176,17 @@
         list-style: none;
         background-color: whitesmoke;
         left: 0;
-        top:13vh;
+        top: 13vh;
         height: 220px;
         width: 100%;
         transition: all 0.5s ease-out;
     }
 
-    .navbar-link{
+    .navbar-link {
         color: #FF6E61;
     }
 
-    .navbar-link:hover{
+    .navbar-link:hover {
         background: #FF6E61;
         color: white;
     }

@@ -1,10 +1,20 @@
 import React , {useState} from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import "./header.css"
 import Lo from "../../images/footgen-logo.png"
 
 const Header = () => {
   const [isMobile,setIsMobile] = useState(false)
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+  const toggleSearch = () => {
+    setIsSearchOpen(!isSearchOpen);
+  };
+
+  const handleSearch = (e) => {
+    const searchTerm = e.target.value;
+    console.log('Searching for:', searchTerm);
+  };
 
   return (
     <div className='h'>
@@ -15,30 +25,36 @@ const Header = () => {
         <ul className={isMobile? "nav-links" : "navbar-list"}>
 
           <li className="navbar-item">
-            <Link to="/header" className="navbar-link">HOME</Link>
+            <Link to='/' className="navbar-link">HOME</Link>
           </li>
 
           <li className="navbar-item">
-            <Link to="/main" className="navbar-link">PRODUCTS</Link>
+            <Link to='/main' className="navbar-link">PRODUCTS</Link>
           </li>
 
           <li className="navbar-item">
-            <Link to="/bestseller" className="navbar-link">SHOP</Link>
+            <Link to='/bestseller' className="navbar-link">SHOP</Link>
           </li>
 
           <li className="navbar-item">
-            <Link to="/footer" className="navbar-link">SALE</Link>
+            <Link to='/sale' className="navbar-link">SALE</Link>
           </li>
 
           <li className="navbar-item">
-            <Link to="/footer" className="navbar-link">CONTACT</Link>
+            <Link to='/contact' className="navbar-link">CONTACT</Link>
           </li>
 
         </ul>
 
       </div>
       <div className="h-right">
-        <ion-icon name="search-outline" aria-hidden="true" />
+        <ion-icon onClick={toggleSearch} name="search-outline" aria-hidden="true" />
+        {isSearchOpen && (
+        <div className="search-bar">
+          <input type="text" placeholder="Search..." onChange={handleSearch}/>
+          {/* Add your search functionality here */}
+        </div>
+      )}
         <ion-icon name="person-outline" aria-hidden="true" />
         <ion-icon name="heart-outline" aria-hidden="true" />
         <ion-icon name="bag-outline" aria-hidden="true" />
