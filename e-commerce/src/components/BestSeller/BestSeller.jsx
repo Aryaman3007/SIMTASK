@@ -1,20 +1,20 @@
 import React from 'react'
 import "./bestSeller.css"
-import Card from './Card'
+import Card from '../Card/Card'
 import { useState } from 'react'
-import { products } from '../data'
-import S1 from "../images/service-1.png"
-import S2 from "../images/service-2.png"
-import S3 from "../images/service-3.png"
-import S4 from "../images/service-4.png"
-import I1 from "../images/insta-1.jpg"
-import I2 from "../images/insta-2.jpg"
-import I3 from "../images/insta-3.jpg"
-import I4 from "../images/insta-4.jpg"
-import I5 from "../images/insta-5.jpg"
-import I6 from "../images/insta-6.jpg"
-import I7 from "../images/insta-7.jpg"
-import I8 from "../images/insta-8.jpg"
+import { products } from '../../data'
+import S1 from "../../images/service-1.png"
+import S2 from "../../images/service-2.png"
+import S3 from "../../images/service-3.png"
+import S4 from "../../images/service-4.png"
+import I1 from "../../images/insta-1.jpg"
+import I2 from "../../images/insta-2.jpg"
+import I3 from "../../images/insta-3.jpg"
+import I4 from "../../images/insta-4.jpg"
+import I5 from "../../images/insta-5.jpg"
+import I6 from "../../images/insta-6.jpg"
+import I7 from "../../images/insta-7.jpg"
+import I8 from "../../images/insta-8.jpg"
 
 const BestSeller = () => {
 

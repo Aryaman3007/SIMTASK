@@ -13,7 +13,7 @@
 }
 
 .hero {
-    background-image: url("../images/hero banner.png");
+    background-image: url("../../images/hero banner.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;

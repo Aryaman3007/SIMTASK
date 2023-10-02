@@ -1,8 +1,8 @@
 import React from 'react'
 import "./main.css"
-import C1 from "../images/collection-1.jpg"
-import C2 from "../images/collection-2.jpg"
-import C3 from "../images/collection-3.jpg"
+import C1 from "../../images/collection-1.jpg"
+import C2 from "../../images/collection-2.jpg"
+import C3 from "../../images/collection-3.jpg"
 
 const main = () => {
   return (

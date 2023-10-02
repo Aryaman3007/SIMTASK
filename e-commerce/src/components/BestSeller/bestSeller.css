@@ -90,7 +90,7 @@
 
 .b1 {
     width: 40%;
-    background-image: url("../images/cta-1.jpg");
+    background-image: url("../../images/cta-1.jpg");
     background-repeat: no-repeat;
     margin-right: 20px;
 }
@@ -98,7 +98,7 @@
 .b2 {
     width: 40%;
     height: 300px;
-    background-image: url("../images/cta-2.jpg");
+    background-image: url("../../images/cta-2.jpg");
     background-repeat: no-repeat;
     margin-left: 20px;
 }
